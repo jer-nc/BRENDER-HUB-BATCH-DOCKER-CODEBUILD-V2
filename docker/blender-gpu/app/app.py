@@ -45,7 +45,7 @@ if __name__ == "__main__":
     # JSON ANIMATION
     # render_json_str = "{\r\n  \"RenderConfig\": {\r\n    \"Type\": \"Animation\",\r\n    \"isRenderAuto\": false,\r\n    \"Engine\": \"BLENDER_EEVEE\",\r\n    \"Animation\": {\r\n      \"StartFrame\": 25,\r\n      \"EndFrame\": 250,\r\n      \"FPS\": 25,\r\n      \"SceneName\": \"Scene\",\r\n      \"LayerName\": \"ViewLayer\",\r\n      \"CameraName\": \"Camera\",\r\n      \"AspectRatio\": \"16:9\",\r\n      \"Resolution\": {\r\n        \"X\": 1920,\r\n        \"Y\": 1080\r\n      },\r\n      \"ColorDepth\": \"8\",\r\n      \"ColorMode\": \"RGB\",\r\n      \"OutputFormat\": \"PNG\",\r\n      \"Compression\": 15,\r\n      \"ResolutionPercentage\": 100,\r\n      \"Samples\": 10,\r\n      \"Denoise\": true,\r\n      \"DenoiseAlgorithm\": \"OPENIIMAGEDENOISE\",\r\n      \"NoiseTreshold\": 0.01\r\n    }\r\n  }\r\n}"
 
-    render_json_str = sys.argv[1]
+    # render_json_str = sys.argv[1]
     render_json_str = sys.argv[1] if len(sys.argv) > 1 else "{}"
 
     json_data = parse_json(render_json_str)
